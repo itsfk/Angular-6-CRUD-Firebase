@@ -5,10 +5,16 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
+import { CustomerDetailsComponent } from './customers/customer-details/customer-details.component';
+import { CustomersListComponent } from './customers/customers-list/customers-list.component';
+import { CreateCustomerComponent } from './customers/create-customer/create-customer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CustomerDetailsComponent,
+    CustomersListComponent,
+    CreateCustomerComponent
   ],
   imports: [
     BrowserModule,
