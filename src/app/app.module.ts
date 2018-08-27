@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { CustomerDetailsComponent } from './customers/customer-details/customer-details.component';
 import { CustomersListComponent } from './customers/customers-list/customers-list.component';
 import { CreateCustomerComponent } from './customers/create-customer/create-customer.component';
-
+import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +18,7 @@ import { CreateCustomerComponent } from './customers/create-customer/create-cust
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule, // for database
