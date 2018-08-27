@@ -2,21 +2,9 @@
   <div style="color: blue;">
     <h1>{{title}}</h1>
   </div>
-
-  <div style="width: 300px;">
-    <form (ngSubmit)="onSubmit()">
-      <div class="form-group">
-        <label for="item">Item</label>
-        <input type="text" class="form-control" placeholder="Enter content..." id="item" required [(ngModel)]="itemValue"
-          name="item">
-      </div>
-
-      <div class="btn-group">
-        <button type="submit" class="btn btn-success">Submit</button>
-      </div>
-    </form>
-  </div>
-
-  <h2>Content from Firebase</h2>
-  <div class="col-md-3">
-    <pre *ngFor="let item of items | async">{{item.content}}
+  <nav>
+    <a routerLink="customers" class="btn btn-primary active" role="button" routerLinkActive="active">Customers</a>
+    <a routerLink="add" class="btn btn-primary active" role="button" routerLinkActive="active">Add</a>
+  </nav>
+  <router-outlet></router-outlet>
+</div>
